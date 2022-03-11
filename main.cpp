@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
@@ -29,7 +29,7 @@ int main (int argc, char** argv)
     char buffer[MAX_BUFF];
     int i, j, n;
     
-    // ler input do utilizador e testar se � v�lido
+    // ler input do utilizador e testar se é válido
     buffer[0] = '\0';
 
     while(!isNumeric(buffer) || atoi(buffer)<5 || atoi(buffer)>80)
@@ -57,7 +57,7 @@ int main (int argc, char** argv)
         putchar('\n');
     }
 
-    // �ltima linha 
+    // última linha 
     puts(linha_completa);
 
     return 0;
